@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End Reset */
+
+body {
+	font-family: 'Sorts Mill Goudy', serif;
+	background: url(../img/sativa.png) repeat 0 0;
+	padding: 18px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+header {
+	border-bottom: 3px gray solid;
+	margin-bottom: 18px;
+}
+
+.logo-box {
+	margin: 0 auto 12px auto;
+	width: 90px;
+}
+
+.logo-box img {
+	width: 90px;
+}
+
+.title-container {
+	text-align: center;
+}
+
+.title-container h1 {
+	font-size: 30px;
+	margin-bottom: 6px;
+	color: #1f1f1f;
+}
+
+.sub-title {
+	font-size: 17px;
+	font-family: 'Sorts Mill Goudy', serif;
+	font-style: italic;
+	color: #6b6b6b;
+}
+
+.hero-image img {
+	max-width: 100%;
+	min-height: 200px;
+	border-bottom: 6px #6b6b6b solid;
+	box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.24), 0 0 2px hsla(0, 0%, 0%, 0.12);
+}
+
+.featured-work {
+	margin-top: 18px;
+}
+
+.featured-work h2 {
+	font-size: 21px;
+	text-align: center;
+	margin-bottom: 6px;
+}
+
+.work-box {
+	width: 100%;
+	height: 60%;
+    margin-bottom: 18px;
+}
+
+.work-box-img {
+	border-bottom: 6px #6b6b6b solid;
+	height: 160px;
+	overflow: hidden;
+	margin-bottom: 6px;
+	box-shadow: 0 1px 1px hsla(0, 0%, 0%, 0.24), 0 0 2px hsla(0, 0%, 0%, 0.12);
+}
+
+.work-box h3 {
+	font-size: 17px;
+	margin-bottom: 6px;
+}
+
+.work-box a:link {
+	color: #dc7329;
+	text-decoration: none;
+}
+
+.work-box a:hover {
+	text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+	.logo-box {
+		float: left;
+		margin: 0;
+		width: 90px;
+	}
+
+    .logo img {
+		width: 90px;
+	}
+
+	.title-container {
+		float: right;
+		text-align: right;
+		margin: 18px 0 0 0;
+	}
+
+	.title-container h1 {
+		font-size: 36px;
+	}
+
+	.clear-fix {
+		clear: both;
+	}
+
+	.featured-work h2 {
+		font-size: 24px;
+	}
+
+    .work-box {
+        width: 32%;
+    }
+
+	.work-box-img {
+		height: 200px;
+	}
+
+    .work-box-container {
+    	display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.sub-title {
+		font-size: 24px;
+	}
+
+	.work-box h3 {
+		font-size: 21px;
+	}
+}
